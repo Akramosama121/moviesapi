@@ -1,7 +1,6 @@
 # To Edit a Movie Info 
-sned patch request Using Postman to 
+sned patch request Using Postman to  **url/movies/MovieId**
 
-<url>/movies/<MovieId>
    ## ===> body==> raw and follow this :-
  
  [{ 	
@@ -27,10 +26,10 @@ sned patch request Using Postman to
  },...etc]
  # To Delete A movie :-
  
- send a delete Request using PostMan To **<url>/movies/<MovieId>**
+ send a delete Request using PostMan To **url/movies/MovieId**
 
  ### Every movie has a unique id which was qiven by "Mongoose" 
 
-  **In This Project The Default <url> is http://localhost:3000**
+  **In This Project The Default url is http://localhost:3000**
   #### Good luck 
   
