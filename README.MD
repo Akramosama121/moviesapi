@@ -1,4 +1,4 @@
-#To start this api start server.js using nodemon or any other method
+# To start this api start server.js using nodemon or any other method
 # To Edit a Movie Info 
 send a patch request Using Postman to  **url/movies/MovieId**
 
@@ -33,6 +33,6 @@ and follow this :-
  ### Every movie has a unique id which was qiven by "Mongoose" 
 
   **In This Project The Default url is http://localhost:3000**
-  >Use You Mongoose account info To access Database
+  >Use Your Mongoose account info To access Database
   #### Good luck 
   
