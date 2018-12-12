@@ -9,9 +9,15 @@ router.get('/', (req, res, next) => {
 });
 router.post('/', (req, res, next) => {
 
+    const order = {
+        MovieId: req.body.MovieId,
+        client: req.body.client,
+        phone: req.body.phone
 
+    };
     res.status(201).json({
-        message: 'Order Was Created'
+        message: 'Order Was Created',
+        OrderDetails: order
     });
 });
 router.get('/:OrderId', (req, res, next) => {
