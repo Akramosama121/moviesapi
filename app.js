@@ -3,7 +3,7 @@ const app = express();
 const morgan = require('morgan');
 const bodyParser = require("body-parser");
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://test:kaka1234@ds129233.mlab.com:29233/todo', { useNewUrlParser: true }, { useMongoClient: true });
+mongoose.connect('mongodb://<name>:<password>@ds129233.mlab.com:29233/todo', { useNewUrlParser: true }, { useMongoClient: true });
 const MoviesRoutes = require('../api/routes/movies');
 mongoose.Promise = global.Promise;
 app.use('/uploads', express.static('uploads'));

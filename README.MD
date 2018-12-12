@@ -1,3 +1,4 @@
+#To start this api start server.js using nodemon or any other method
 # To Edit a Movie Info 
 send a patch request Using Postman to  **url/movies/MovieId**
 
