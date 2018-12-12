@@ -1,7 +1,7 @@
 # To Edit a Movie Info 
 sned patch request Using Postman to  **url/movies/MovieId**
-
-   ## ===> body==> raw and follow this :-
+**===> body==> raw**
+and follow this :-
  
  [{ 	
 
