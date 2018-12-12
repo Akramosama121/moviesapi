@@ -27,9 +27,7 @@ sned patch request Using Postman to
  },...etc]
  # To Delete A movie :-
  
- send a delete Request using PostMan To
-
- ## <url>/movies/<MovieId>
+ send a delete Request using PostMan To **<url>/movies/<MovieId>**
 
  ### Every movie has a unique id which was qiven by "Mongoose" 
 
