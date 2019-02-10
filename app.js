@@ -2,14 +2,30 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+app.use(bodyParser.json());
+app.set('view engine', 'ejs');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://<name>:<password>@ds129233.mlab.com:29233/todo', { useNewUrlParser: true }, { useMongoClient: true });
+mongoose.connect('mongodb://<UserNAme>:<Password>@ds129233.mlab.com:29233/todo', { useNewUrlParser: true });
 const MoviesRoutes = require('../api/routes/movies');
-mongoose.Promise = global.Promise;
-app.use('/uploads', express.static('uploads'));
+
 const OrderRoutes = require('../api/routes/orders');
+
+
+
+mongoose.Promise = global.Promise;
+//static Folders
+app.use('/css', express.static('css'));
+app.use('/uploads', express.static('uploads'));
+
+
+
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 app.use(morgan('dev'));
 app.use((req, res, next) => {
 
@@ -26,6 +42,16 @@ app.use((req, res, next) => {
 });
 //Handling Requests
 app.use('/movies', MoviesRoutes);
+
+app.get('/main', (req, res, next) => {
+    res.render('main');
+});
+app.get('/todo', (req, res, next) => {
+    res.render('todo');
+});
+app.get('/new', (req, res, next) => {
+    res.render('newmov');
+});
 app.use('/orders', OrderRoutes);
 app.use((req, res, next) => {
     const error = new Error('Not Found');

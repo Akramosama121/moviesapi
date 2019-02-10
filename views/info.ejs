@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie's Info </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/ninja.css" type="text/css">
+
+</head>
+
+<body>
+
+    <h1 class=pin>My To Do app</h1>
+
+    <div class="todo-table">
+        <% include partials/nav.ejs %>
+            <h2> Price :
+                <%= Movie.price%> $
+            </h2>
+            <div class="ml-content">
+                <img src="<%= SRC.src %>" width="345" height="517.5" />
+            </div>
+
+            <div class="mr-content">
+                <h2> Name :
+                    <%= Movie.name%>
+                </h2>
+                <h2>Genre :
+                    <%= Movie.genre%>
+                </h2>
+                <h2>Publish Year :
+                    <%= Movie.publisYear%>
+                </h2>
+                <h2> Director :
+                    <%= Movie.Director%>
+                </h2>
+
+                <h2>Actors :
+                    <%= Movie.Actors%>
+                </h2>
+
+                <h2>Production Companies :
+                    <%= Movie.ProductionCompanies%>
+                </h2>
+
+                <h2>Producers :
+                    <%= Movie.Producers%>
+                </h2>
+
+
+                <h2>Budget :
+                    <%= Movie.Budget%>
+                </h2>
+                <h2>Imdb Rating :
+                    <%= Movie.imdbrating%>
+                </h2>
+                <h2>Rotter Tomattos Rating :
+                    <%= Movie.rottertomattosrating%>
+                </h2>
+                <h2>Budget :
+                    <%= Movie.Budget%>
+                </h2>
+
+            </div>
+            <div class="ms-content">
+                <p>Description :
+                    <%= Movie.description%>
+                </p>
+            </div>
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

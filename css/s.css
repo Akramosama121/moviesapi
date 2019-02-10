@@ -1,0 +1,45 @@
+body {
+    background-image: url('../IMG_0519.JPG') center/cover;
+}
+
+#green {
+    color: green;
+}
+
+#red {
+    color: red;
+}
+
+#blue {
+    color: blue;
+}
+
+#cayn {
+    color: cyan;
+}
+
+div p {
+    color: crimson;
+}
+
+a br {
+    color: rgb(250, 250, 252);
+    text-decoration: none;
+}
+
+a :active {
+    color: rgb(255, 0, 0);
+}
+
+a:hover {
+    color: rgb(47, 78, 255);
+}
+
+a:visited {
+    color: darkgoldenrod;
+}
+
+p::first-letter {
+    size: 15px;
+    color: blue;
+}

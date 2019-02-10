@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type=" text/css " href="../css/tables.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <% include partials/nav.ejs %>
+
+        <div>
+            <p class="center">
+
+            </p>
+            <form id="formy" name="kaka" action="#">
+
+                <label for="fname">Who You Wanna Contact ? </label>
+                <input type="text" id="fname"> <br> <br>
+                <label for="dept">In Which Department ? </label>
+                <input type="text" id="dept" value=> <br> <br>
+                <label for="em">Please Enter Your Email  </label>
+                <input type="email" id="em" placeholder="Enter Your Email"> <br> <br>
+
+                <label for="as11">Your Carear</label>
+                <select name="Select" id="as11">
+                <option value="as11">Telecom</option>
+                <option value="as11">Software</option>
+                <option value="as11">Computee</option>
+                <option value="as11">Arch</option>
+                <option value="as11">Mechanical</option>
+       </select> <br><br>
+                <label for="tex">Write Comment</label><br> <br>
+                <textarea name="textarea" id="tex" cols="40" rows="10" placeholder="We're So Happy To Have You With Us"></textarea>
+                <input type="submit" value="submit"> <br>
+                <div id="message" style="color:rgb(255, 0, 0)"></div>
+
+                <ul>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+
+
+
+                </ul>
+                <li class="lia">
+                    <a href="#">fdsfsdfds</a>
+                </li>
+                <a href="http://"></a>
+            </form>
+        </div>
+        <ul class="ula">
+            <% for (var i=0 ;i< Count; i++){%>
+                <li class=uli>
+                    <a href="#">
+                        <% Movies[i].name %>
+                    </a>
+                </li>
+
+                <% } %>
+
+
+        </ul>
+</body>
+
+</html>

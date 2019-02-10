@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #f7b0b0;
+}
+
+.center {
+    max-width: 100%;
+    margin: 0 50px;
+    padding: auto;
+}
+
+.left {
+    background: #eeeeee;
+    max-width: ;
+    70%;
+    padding: 15px;
+    float: left;
+    margin: auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: cadetblue;
+    font-size: 25px;
+    font-style: italic;
+    line-height: 70px;
+    float: right;
+}
+
+.logonav {
+    float: left;
+}
+
+.vnav {
+    float: right;
+}
+
+.nav ul li a:hover {
+    color: red;
+}
+
+.hed {
+    background: #eeeeee;
+    height: 100px;
+    width: 100%;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+    text-align: justify;
+}
+
+
+/* dgffdgdfgdfgdf*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rebeccapurple;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    text-align: justify;
+}
+
+col {
+    color: blueviolet;
+}
+
+ul {
+    /* background: #a5a5a5;*/
+    color: black;
+    list-style: circle;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.pp {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    clear: both;
+    max-width: 100%;
+    height: 40px;
+    background: #ffffff;
+}
+
+.akr-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 70%;
+}
+
+.right {
+    padding: 15px;
+    height: 100%;
+    max-width: 25%;
+    background: chartreuse;
+    float: right;
+}
+
+.aside div {
+    background: #ffffff;
+    padding: 15px;
+    float: auto;
+}
+
+.clearfix::after {
+    display: block;
+    visibility: none;
+    clear: both;
+    content: " ";
+}
+
+img aa {
+    padding: 0;
+}
+
+.as ul li a {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: 25px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration-style: none;
+    display: flow-root;
+}
+
+.as ul li a:hover {
+    color: red;
+}
+
+.ax h2 {
+    color: black;
+}

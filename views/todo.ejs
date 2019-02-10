@@ -1,0 +1,77 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Submiting form </title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../css/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../css/ninja.css" type="text/css">
+
+</head>
+
+<body>
+
+    <h1 class=pin>My To Do app</h1>
+
+    <div id="todo-table">
+        <% include partials/nav.ejs %>
+            <h2> New Movie Submiting form </h2>
+            <form action="/movies" method="post" id="carform" enctype="multipart/form-data">
+                <label class="lab" for="movname">Movie Name</label> <br>
+                <input class="s" type="text" id="movname" name="name" placeholder="Add Movie's Name ...." required><br>
+
+
+                <br><label class="lab" for="movgenre">Genre</label>
+                <br><input class="s" type="text" id="movgenre" name="genre" placeholder="Add Movie's Genre ...." required><br>
+
+
+                <br><label class="lab" for="movpublisYear">Publish Year</label>
+                <br> <input class="s" type="text" id="movpublisYear" name="publisYear" placeholder="Add Movie's Publish Year ...." required><br>
+
+                <br><label class="lab" for="movDirector">Director</label>
+                <br> <input class="s" type="text" id="movDirector" name="Director" placeholder="Add Movie's Director ...." required><br>
+
+                <br><label class="lab" for="movActors">Actors</label>
+                <br> <input class="s" type="text" id="movActors" name="Actors" placeholder="Add Movie's Actors ...." required><br>
+
+                <br><label class="lab" for="movProductionCompanies">Production Companies</label>
+                <br> <input class="s" type="text" id="movProductionCompanies" name="ProductionCompanies" placeholder="Add Movie's Production Companies ...." required><br>
+
+                <br><label class="lab" for="movProducers">Producers</label>
+                <br> <input class="s" type="text" id="movProducers" name="Producers" placeholder="Add Movie's Producers ...." required><br>
+
+                <br><label class="lab" for="movBudget">Budget</label>
+                <br> <input class="s" type="text" id="movBudget" name="Budget" placeholder="Add Movie's Budget ...." required><br>
+
+                <br><label class="lab" for="movimdbrating">Imdb Rating</label>
+                <br> <input class="s" type="text" id="movimdbrating" name="imdbrating" placeholder="Add Movie's Imdb Rating ...." required><br>
+
+                <br><label class="lab" for="movrottertomattosrating">Rotter Tomattos Rating</label>
+                <br> <input class="s" type="text" id="movrottertomattosrating" name="rottertomattosrating" placeholder="Add Movie's Rotter Tomattos Rating...." required><br>
+
+                <br> <label class="lab" for="tex">Description</label>
+                <br> <textarea name="description" id="tex" cols="40" rows="10" placeholder="Add Movie's Description ...." required></textarea><br>
+
+
+                <br><label class="lab" for="movprice">Price</label>
+                <br> <input class="s" type="number" id="movprice" name="price" placeholder="Add Movie's Price ...." required><br>
+
+                <br><label class="lab" for="Cover">Cover Image </label>
+                <br><input type="file" name="image" class="custom-file-input" id="Cover">
+
+
+                <br> <button id="formset" class="butt" type="submit">Add new Movie</button>
+            </form>
+            <ul>
+
+            </ul>
+    </div>
+
+
+</body>
+
+</html>
