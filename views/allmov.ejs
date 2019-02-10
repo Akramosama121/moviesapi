@@ -21,13 +21,15 @@
             <h2> You Have
                 <%= Count%> Movies
             </h2>
-            <ul class="ula">
-                <li class="lia">
-                    <a href="<%Movies%>"> Goto
-                        
-                    </a>
-                </li>
+            <ul class="ulb">
+                <% for (var i=0 ;i< Count; i++){%>
+                    <li class=lib>
+                        <a class="aa1" href='<%= Movies[i].Url %>'>
+                            <%= Movies[i].name %>
+                        </a>
+                    </li>
 
+                    <% } %>
 
 
             </ul>

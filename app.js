@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.set('view engine', 'ejs');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://<UserNAme>:<Password>@ds129233.mlab.com:29233/todo', { useNewUrlParser: true });
+mongoose.connect('mongodb://<name>:<password>@ds129233.mlab.com:29233/todo', { useNewUrlParser: true });
 const MoviesRoutes = require('../api/routes/movies');
 
 const OrderRoutes = require('../api/routes/orders');

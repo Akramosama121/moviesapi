@@ -132,17 +132,50 @@ h2 {
     overflow: hidden;
     background: #0d1521;
     font-size: 16px;
+    text-decoration: none;
+    display: block;
 }
 
 .lia {
+    display: block;
+    margin-top: 8px;
     float: left;
+}
+
+.ulb {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lib {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: arial;
+    font-size: 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.lib:hover {
+    background: crimson;
+}
+
+.aa1 {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .ml-content {
     max-width: 50%;
     float: left;
     padding: 5px;
-    background: crimson;
     overflow: hidden;
     margin-left: 7%
 }
@@ -168,7 +201,7 @@ h2 {
 }
 
 .lia a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
